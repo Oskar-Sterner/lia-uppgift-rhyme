@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Article Manager</title>
+    <script defer src="js/app.js" type="module"></script>
+    <script defer src="js/menu.js"></script>
+    <link rel="stylesheet" href="scss/main.scss">
+  </head>
+  <body>
+
+    <div id="menu">
+        <a id="search-button-menu">Search</a>
+        <a id="delete-button-menu">Delete</a>
+        <a id="create-button-menu">Create</a>
+        <a id="update-button-menu">Update</a>
+    </div>
+
+    <div id="search-form">
+        <input type="text" id="article-id-input" placeholder="Enter article ID" required>
+        <button id="search-button">Search</button>
+    </div>
+
+    <div id="delete-form">
+        <input type="text" id="delete-article-id-input" placeholder="Enter article ID you want to delete" required>
+        <button id="del-search-button">Delete</button>
+    </div>
+
+    <div id="create-form">
+        <input type="text" id="create-article-title-input" placeholder="Title..." required>
+        <input type="text" id="create-description-title-input" placeholder="Description..." required>
+        <input type="text" id="create-author-title-input" placeholder="Author..." required>
+        <input type="text" id="create-body-title-input" placeholder="A body..." required>
+        <button id="create-button">Submit</button>
+    </div>
+
+    <div id="update-article-form">
+        <input type="text" id="id-update-title-input" placeholder="The id of the article" required>
+        <input type="text" id="update-article-title-input" placeholder="Updated title...">
+        <input type="text" id="update-description-title-input" placeholder="Updated description...">
+        <input type="text" id="update-author-title-input" placeholder="Updated author...">
+        <input type="text" id="update-body-title-input" placeholder="Updated body...">
+        <button id="update-button">Update</button>
+    </div>
+      
+    <div class="grid-container" id="app"></div>
+  </body>
+</html>
